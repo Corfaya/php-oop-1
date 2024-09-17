@@ -26,9 +26,11 @@
                     </div>
                     <div class="card-body">
                         <h4>Genere:</h4>
+                        <ul class="list-unstyled">
                         <?php foreach($movie->genres as $genre) { ?>
-                            <p> <?php echo $genre ?> </p>
+                            <li> <?php echo $genre ?> </li>
                         <?php } ?>
+                        </ul>
                         <h4>Durata:</h4>
                         <p> <?php echo $movie->duration ?> minuti</p>
                         <h4>Regista:</h4>
