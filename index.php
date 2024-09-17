@@ -1,36 +1,30 @@
 <?php
-    class Movie {
-        public $title;
-        public $genres; // array
-        public $duration;
-        public $director;
-        public $year;
-        public $cast; // array
-
-        function __construct ($_title, Array $_genres, $_duration, $_director, $_year, Array $_cast) {
-            $this->title = $_title;
-            $this->genres = $_genres;
-            $this->duration = $_duration;
-            $this->director = $_director;
-            $this->year = $_year;
-            $this->cast = $_cast;
-        }
-
-        // getter function
-        public function getInfo() {
-            return $this->title." ".$this->duration." ".$this->director." ".$this->year;
-        }
-    }
-
-    // objects
-    $movie1 = new Movie("...altrimenti ci arrabbiamo!", ["Commedia", "Azione"], 98, "Marcello Fondato", 1974, ["Terence Hill", "Bud Spencer", "John Sharp", "Patty Shepard", "Donald Pleasence"]);
-    $movie2 = new Movie("Paura e delirio a Las Vegas", ["Commedia", "Grottesco", "Drammatico"], 118, "Terry Gilliam", 1998, ["Johnny Depp", "Benicio del Toro", "Tobey Maguire", "Ellen Barkin", "Christina Ricci"]);
-    $movie3 = new Movie("The Northman", ["Avventura", "Azione", "Drammatico", "Storico", "Fantastico"], 137, "Robert Eggers", 2022, ["Alexander Skarsgård", "Claes Bang", "Nicole Kidman", "Willem Defoe", "Ethan Hawke", "Anya Taylot-Joy"]);
-
-    // on page
-    // echo $movie1->getInfo();
-    // echo "<hr>";
-    // echo $movie2->getInfo();
-    // echo "<hr>";
-    // echo $movie3->getInfo();
+    include "./partials/db.php";
 ?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>PHP - OOP Class exercise</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>PHP Movie Class</h1>
+            </div>
+            <div class="col-12 col-md-6 col-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h2> </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
