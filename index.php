@@ -18,12 +18,19 @@
 
         // getter function
         public function getInfo() {
-            return $this->title." ".$this->genre." ".$this->duration." ".$this->director." ".$this->year." ".$this->cast;
+            return $this->title." ".$this->genre." ".$this->duration." ".$this->director." ".$this->year;
         }
     }
 
     // objects
-    $altrimenti_ci_arrabbiamo = new Movie("...altrimenti ci arrabbiamo!", "Commedia", 98, "Marcello Fondato", 1974, ["Terence Hill", "Bud Spencer", "John Sharp", "Patty Shepard", "Donald Pleasence"]);
-    $paura_e_delirio = new Movie("Paura e delirio a Las Vegas", "commedia", 118, "Terry Gilliam", 1998, ["Johnny Depp", "Benicio del Toro", "Tobey Maguire", "Ellen Barkin", "Christina Ricci"]);
-    $northman = new Movie("The Northman", "avventura", 137, "Robert Eggers", 2022, ["Alexander Skarsgård", "Claes Bang", "Nicole Kidman", "Willem Defoe", "Ethan Hawke", "Anya Taylot-Joy"]);
+    $movie1 = new Movie("...altrimenti ci arrabbiamo!", "Commedia", 98, "Marcello Fondato", 1974, ["Terence Hill", "Bud Spencer", "John Sharp", "Patty Shepard", "Donald Pleasence"]);
+    $movie2 = new Movie("Paura e delirio a Las Vegas", "Commedia", 118, "Terry Gilliam", 1998, ["Johnny Depp", "Benicio del Toro", "Tobey Maguire", "Ellen Barkin", "Christina Ricci"]);
+    $movie3 = new Movie("The Northman", "Avventura", 137, "Robert Eggers", 2022, ["Alexander Skarsgård", "Claes Bang", "Nicole Kidman", "Willem Defoe", "Ethan Hawke", "Anya Taylot-Joy"]);
+
+    // on page (bonus: add array on page)
+    echo $movie1->getInfo();
+    echo "<hr>";
+    echo $movie2->getInfo();
+    echo "<hr>";
+    echo $movie3->getInfo();
 ?>
