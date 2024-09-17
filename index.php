@@ -36,7 +36,7 @@
                         <h4>Regista:</h4>
                         <p> <?php echo $movie->director ?> </p>
                         <h4>Anno:</h4>
-                        <p> <?php echo $movie->year ?> </p>
+                        <p> <?php echo $movie->isFrom2000s() ?> </p>
                         <h4>Cast principale:</h4>
                         <ul class="list-unstyled">
                             <?php foreach($movie->cast as $actor) { ?>
