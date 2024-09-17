@@ -28,9 +28,9 @@
     $movie3 = new Movie("The Northman", ["Avventura", "Azione", "Drammatico", "Storico", "Fantastico"], 137, "Robert Eggers", 2022, ["Alexander Skarsgård", "Claes Bang", "Nicole Kidman", "Willem Defoe", "Ethan Hawke", "Anya Taylot-Joy"]);
 
     // on page
-    echo $movie1->getInfo();
-    echo "<hr>";
-    echo $movie2->getInfo();
-    echo "<hr>";
-    echo $movie3->getInfo();
+    // echo $movie1->getInfo();
+    // echo "<hr>";
+    // echo $movie2->getInfo();
+    // echo "<hr>";
+    // echo $movie3->getInfo();
 ?>
