@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #FAEDCE;
+}
+
+h2 {
+    color: #9ca387;
+    text-align: center;
+}
+
+h4 {
+    font-weight: 700;
+}
+
+.card {
+    background-color: #FEFAE0;
+    border: none;
+}
