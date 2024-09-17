@@ -15,5 +15,10 @@
             $this->year = $_year;
             $this->cast = $_cast;
         }
+
+        // getter function
+        public function getInfo() {
+            return $this->title." ".$this->genre." ".$this->duration." ".$this->director." ".$this->year." ".$this->cast;
+        }
     }
 ?>
