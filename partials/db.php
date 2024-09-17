@@ -1,5 +1,5 @@
 <?php
-    include "./Models/Movie.php";
+    include __DIR__."/../Models/Movie.php";
     // objects
     $movie1 = new Movie("Paura e delirio a Las Vegas", ["Commedia", "Grottesco", "Drammatico"], 118, "Terry Gilliam", 1998, ["Johnny Depp", "Benicio del Toro", "Tobey Maguire", "Ellen Barkin", "Christina Ricci"]);
     $movie2 = new Movie("...altrimenti ci arrabbiamo!", ["Commedia", "Azione"], 98, "Marcello Fondato", 1974, ["Terence Hill", "Bud Spencer", "John Sharp", "Patty Shepard", "Donald Pleasence"]);
